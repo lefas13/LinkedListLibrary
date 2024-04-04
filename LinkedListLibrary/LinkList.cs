@@ -2,7 +2,7 @@
 
 namespace LinkedListLibrary
 {
-    public class LinkedList<T> : ICollection<T>
+    public class LinkList<T> : ICollection<T>
     {
         private class Node<T>
         {
@@ -34,6 +34,17 @@ namespace LinkedListLibrary
                 tail!.Next = node;
             tail = node;
 
+            count++;
+        }
+
+        // добвление в начало
+        public void AppendFirst(T data)
+        {
+            Node<T> node = new Node<T>(data);
+            node.Next = head;
+            head = node;
+            if (IsEmpty)
+                tail = head;
             count++;
         }
 
