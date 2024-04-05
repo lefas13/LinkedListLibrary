@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using LinkedListLibrary;
+﻿using LinkedListLibrary;
 
 class Program
 {
@@ -8,7 +6,7 @@ class Program
 
     static void Main(string[] args)
     {
-        // Добавляем узлы
+        // Добавляем записи
         linkedList.Add("Diamond");
         linkedList.Add("Iron");
         linkedList.Add("Copper");

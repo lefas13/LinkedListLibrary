@@ -4,14 +4,14 @@ namespace LinkedListLibrary
 {
     public class LinkList<T> : ICollection<T>
     {
-        private class Node<T>
+        private class Node<D>
         {
-            public Node(T data)
+            public Node(D data)
             {
                 Data = data;
             }
-            public T Data { get; set; }
-            public Node<T>? Next { get; set; }
+            public D Data { get; set; }
+            public Node<D>? Next { get; set; }
         }
 
         private Node<T>? head; // головной/первый элемент
